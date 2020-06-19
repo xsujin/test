@@ -1,0 +1,229 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FINAL_HW-20202275</title>
+<link rel="stylesheet" href="./css/onepagescroll.css">
+
+<!--scrollTo.js 플러그인 CDN-->
+<!--
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" intergrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+-->
+
+
+<!--scrollTo.js 플러그인 사용-->
+<script src="./css/jquery-2.2.4.min.js"></script>
+<script src="./css/jquery.scrollTo.min.js"></script>
+
+<!--scrollTo.js 플러그인 실행-->
+<!--
+<script>
+    $(function() {
+        $('nav a').click(function(e){
+            $.scrollTo(this.hash || 0, 1200);
+            e.preventDefault();
+        });
+    });
+</script>
+-->
+
+<style>
+    a{text-decoration: none;}
+    a:hover{color: #FFFD8E;}
+    h1{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 3em;
+        color: #4F437D;
+        padding: 2px;
+        font-family: serif;
+    }
+    h2{
+        text-align: center;
+        font-size: 0.7em;
+        color: lightgray;
+    }
+    h5{
+        text-align: center;
+        text-decoration: underline;
+        color: #4b4ead;
+        font-family: serif;
+        font-size: 2.5em;
+    }
+    h6{
+        text-align: center;
+        text-decoration: underline;
+        color: black;
+        font-family: sans-serif;
+        font-size: 1em;
+        margin: 0.5em;
+    }
+    h7{
+        text-align: center;
+        font-family: serif;
+        color: #4b4ead;
+        font-size: 1.5em;
+        text-shadow: 1px 1px #4F437D;
+    }
+    header{
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        width: 100%;
+        height: 100;
+        margin-bottom: 0;
+        z-index: 3;
+        background-color: azure;
+    }
+    body{
+        background-color: azure;
+    }
+    #wrapper{
+        width: 90%;
+        margin: auto;
+    }
+    footer{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: #d1d9f0;
+        margin-top: 5em;
+        text-shadow: 1px 1px 1px #94a4d1;
+    }
+/*    메뉴 스타일*/
+    #nav{
+        margin-bottom: 1em;
+    }
+    #nav li{
+        display: inline-block;
+    }
+    nav a:link, nav a:visited {
+    font-size: 1em;
+    color: lightgray;
+    text-decoration: none;
+    text-align: center;
+    }
+    .nav-btn{
+        display: inline-block;
+        width: 20%;
+        height: 30px;
+        margin: 0;
+        margin-right: 30px;
+        line-height: 50px;
+    }
+    .nav-btn:last-child{
+        margin-right: 0px;
+    }
+    li{
+        list-style-type: none;
+        font-family: fantasy;
+        color: #271D4C;
+        font-size: 1.5em;
+        width: 150px;
+        border-bottom: 2px solid #BAB2D8;
+        margin-left: 1em;
+        text-align: center;
+    }
+    li:hover:nth-child(1){
+         background-color: #5F5096;
+    }
+    li:hover:nth-child(2){
+        background-color: #9283C5;
+    }
+    li:hover:nth-child(3){
+        background-color: #DAD3F5;
+    }
+    li:hover:nth-child(4){
+        background-color: #D54141;
+    }
+    /*   이미지 삽입   */
+    .page1{
+        background: url(./picture/Avengers_endgame_poster.jpg)no-repeat center;
+        background-size: 70%;
+        height: 800px;
+        margin-top: 15em;
+    }
+    .page2{
+        background-color: azure;
+        background-size: 70%;
+        margin-top: 5em;
+    }
+    .page3{
+        background-color: azure;
+        background-size: 70%;
+        margin-top: 5em;
+    }
+    .page4{
+        background-color: azure;
+        background-size: 70%;
+        margin-top: 5em;
+    }
+</style>
+</head>
+<body>
+   <header>
+   <div id="wrapper">
+    <h1><I>AVENGERS: Endgame</I></h1>
+    <div id="button">
+        <a href="./index.html"><img src="./picture/Marvel_cinematic_universe_logo.png" width="95" alt="logo"></a></div>
+        
+   <div id="container">
+<!--   MENU-->
+    <div id="nav">
+       <ul><ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="#APS" class="nav">POSTER</a></li>
+        <li><a href="#ASR" class="nav">SUMMARY</a></li>
+        <li><a href="#ACM" class="nav">COMMENT</a></li>
+        <li><a href="#WNT" class="nav">▶NEXT?</a></li>
+        <li><a href="./spiderman.html" class="nav">▶SPIDER-MAN</a></li>
+        </ul></ul>
+       </div>
+       <!--  /MENU--></div></div>
+    </header>
+    
+   <div id="wrapper">
+    <section id="APS" class="page1"></section>
+    <section id="ASR" class="page2">
+        <h5><I>Summary</I></h5>
+        <h6><I>I'm inevitable.</I></h6>
+        <h6>"나는 불가피한 존재다."</h6>
+        <h6>-타노스</h6>
+        <h7>▶▶▶</h7>
+        <h4>인피니티 워 이후 절반만 살아남은 지구, 마지막 희망이 된 어벤저스.</h4>
+        <h4>먼저 떠난 그들을 위해 모든 것을 걸었다!</h4>
+        <h4>위대한 어벤져스, 운명을 바꿀 최후의 복수가 펼쳐진다!</h4>
+        <h7>▶▶▶</h7>
+        <h4>어벤저스 실사영화 시리즈의 4번째 작품이자, 마블 시네마틱 유니버스의 스물 두 번째 작품이며, 페이즈 3의 10번째 작품이자 인피니티 사가의 실질적인 마지막 작품.</h4>
+        <h4>2020년 기준 월드와이드 박스오피스 1위 영화이며 제 92회 아카데미 시상식 시각효과상 노미네이트작이기도 하다.</h4><h2>https://namu.wiki/w/%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A4:%20%EC%97%94%EB%93%9C%EA%B2%8C%EC%9E%84</h2>
+    </section>
+    <section id="ACM" class="page3">
+        <h5><I>Comment</I></h5>
+        <h7>★★★★★</h7>
+        <h4>좋아하는 마블의 영화 중 하나인 어벤저스 영화의 끝을 알리는 듯한 영화.</h4>
+        <h4><I>"역시 MARVLE이다"</I> 라는 소리가 나오는 영화.</h4>
+        <h4>아이언맨, 캡틴 아메리카, 블랙 위도우, 헐크, 토르, 비전, 완다 등으로 구성된 기존의 어벤저스가 마무리되고 새로운 영웅들의 출현을 암시하는 듯함.</h4>
+        <h4>페이즈 3의 마지막을 장식하는 영화인 만큼 완성도가 높음.</h4>
+        <h4>많은 내용을 담기에는 영화 시간이 부족했다는 생각이 듦.</h4>
+    </section>
+    <section id="WNT" class="page4">
+        <h5><I>Who's Next?</I></h5>
+        <a href="https://namu.wiki/w/%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8:%20%ED%8C%8C%20%ED%94%84%EB%A1%AC%20%ED%99%88"><img src="picture/Spider_man-FarFromHome_poster.jpg" width="400"></a>
+        <a href="https://namu.wiki/w/%EB%B8%94%EB%9E%99%20%EC%9C%84%EB%8F%84%EC%9A%B0(%EC%98%81%ED%99%94)"><img src="picture/blackwidow_poster.jpg" width="400"></a>
+        <h2>위의 포스터를 클릭하면 해당 나무위키로 이동됩니다.</h2>
+    </section>
+    </div>
+ <!--contaner-->
+    </body>
+    <footer>
+       <div id="foo_div">
+           <span>동양미래대학교 컴퓨터소프트웨어공학과</span> <span>  |  </span>
+           <span>20202275 Choen Sujin</span> <span>   |  </span>
+           <span>[Final HW]</span>
+       </div>
+    </footer>
+</html>
