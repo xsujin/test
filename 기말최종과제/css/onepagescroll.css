@@ -1,0 +1,57 @@
+/*scrollTo.jf 플러그인 CDN사용*/
+<script scr="https://code.jquery.com/jquery-2.2.4.min.js" integirity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+<script scr="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+
+/*scrollTo.js 플러그인 실행*/
+<script>
+    $(function(){
+        $('nav a').click(function(e){
+            $.scrollTo(this.hash || 0, 100);
+            e.preventDefault();
+        });
+    });
+</script>
+
+<style>
+nav{
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background: #ff9100;
+}
+nav a:link, nav a:visited {
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-btn{
+    display: inline-block;
+    width: 20%;
+    height: 30px;
+    margin: 0;
+    margin-right: 30px;
+    line-height: 50px;
+}
+.nav-btn:last-child{
+    margin-right: 0px;
+}
+/*   이미지 삽입   */
+.page1{
+    background: url(./img/picture/Europe.jpg)no-repeat center;
+    background-size: cover;
+}
+.page2{
+    background: url(./img/picture/United_States.jpg)no-repeat center;
+    background-size: cover;
+}
+.page3{
+    background: url(./img/picture/China.jpg)no-repeat center;
+    background-size: cover;
+}
+.page4{
+    background: url(./img/picture/Japan.jpg)no-repeat center;
+    background-size: cover;
+}
+</style>

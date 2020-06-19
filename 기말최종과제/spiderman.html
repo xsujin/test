@@ -1,0 +1,191 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FINAL_HW-20202275</title>
+<link rel="stylesheet" href="./css/onepagescroll.css">
+
+<!--scrollTo.js 플러그인 CDN-->
+<!--
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" intergrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+-->
+
+
+<!--scrollTo.js 플러그인 사용-->
+<script src="./css/jquery-2.2.4.min.js"></script>
+<script src="./css/jquery.scrollTo.min.js"></script>
+
+<!--scrollTo.js 플러그인 실행-->
+<script>
+    $(function() {
+        $('nav a').click(function(e){
+            $.scrollTo(this.hash || 0, 1200);
+            e.preventDefault();
+        });
+    });
+</script>
+
+<style>
+    a{text-decoration: none;}
+    a:hover{color: #FFFD8E;}
+    h1{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 3em;
+        color: #4F437D;
+        padding: 0px;
+        font-family: serif;
+    }
+    h2{
+        text-align: center;
+        font-size: 0.7em;
+        color: lightgray;
+    }
+    h3{
+        text-align: center;
+        text-decoration: underline;
+        color: #B23434;
+        font-family: sans-serif;
+        font-size: 1.2em;
+    }
+    h5{
+        text-align: center;
+        text-decoration: underline;
+        color: #D54141;
+        font-family: serif;
+        font-size: 2em;
+    }
+    h6{
+        text-align: center;
+        text-decoration: underline;
+        color: black;
+        font-family: sans-serif;
+        font-size: 1em;
+        margin: 0.5em;
+    }
+    h7{
+        text-align: center;
+        font-family: serif;
+        color: #D54141;
+        font-size: 1.5em;
+        text-shadow: 1px 1px #B23434;
+    }
+    header{
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        width: 100%;
+        height: 100;
+        margin-bottom: 0;
+        z-index: 3;
+        background-color: #fff2f2;
+    }
+    
+    body{
+        background-color: #fff2f2;
+    }
+    #wrapper{
+        width: 90%;
+        margin: auto;
+    }
+    footer{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: #fadbd7;
+        margin-top: 5em;
+        text-shadow: 1px 1px 1px #de7e73;
+    }
+    #nav{
+        margin-bottom: 1em;
+    }
+    #nav li{
+        display: inline-block;
+    }
+    li{
+        list-style-type: none;
+        font-family: fantasy;
+        color: #840303;
+        font-size: 1.5em;
+        width: 150px;
+        border-bottom: 2px solid #BAB2D8;
+        margin-left: 1em;
+        text-align: center;
+    }
+    li:hover:nth-child(1){
+         background-color: #D54141;
+    }
+    li:hover:nth-child(2){
+        background-color: #F08C8C;
+    }
+    li:hover:nth-child(3){
+        background-color: #F9DADA;
+    }
+    li:hover:nth-child(4){
+        background-color: #5F5096;
+    }
+    /*   이미지 삽입   */
+    .page1{
+        background: url(./picture/Spider_man-FarFromHome_poster.jpg)no-repeat center;
+        background-size: 70%;
+        height: 800px;
+        margin-top: 20em;
+    }
+    .page2{
+        background-color: #fff2f2;
+        background-size: 70%;
+    }
+</style>
+</head>
+<body>
+<div id="wrapper">
+   <header>
+    <h1><I>AVENGERS: Endgame</I></h1>
+    <h3><I>-> SPIDER-MAN: Far From Home</I></h3>
+    <div id="button">
+        <a href="./spiderman.html"><img src="./picture/Marvel_cinematic_universe_logo.png" width="95" alt="logo"></a></div>
+        
+   <div id="container">
+<!--   MENU-->
+    <div id="nav">
+       <ul><ul>
+        <li><a href="./spiderman.html">HOME</a></li>
+        <li><a href="#SSP" class="nav">POSTER</a></li>
+        <li><a href="#SSR" class="nav">SUMMARY</a></li>
+        <li><a href="./index.html" class="nav">▶AVENGERS</a></li>
+        </ul></ul>
+       </div>
+<!--  /MENU-->
+    </div>
+   </header>
+    <section id="SSP" class="page1"></section>
+    <section id="SSR" class="page2">
+        <h5><I>Summary</I></h5>
+        <h6><I>Uneasy lies the head that wears a crown.</I></h6>
+        <h6>"왕관을 쓴 머리는 편안히 쉴 수 없는 법이지."</h6>
+        <h6>-닉 퓨리</h6>
+        <h7>▶▶▶</h7>
+        <h4>마블 스튜디오 스파이더맨 시리즈의 두 번째 작품.</h4>
+        <h4>마블 스튜디오가 제작한 영화이며 마블 시네마틱 유니버스 페이즈 3 및 인피니티 사가의 에필로그에 해당하는 영화.</h4>
+        <h4>본래는 페이즈 4의 첫 번째를 장식할 예정이었지만, 어벤져서: 엔드게임 상하이 팬 이벤트에서 케빈 파이기가 스파이더맨: 파 프롬 홈이 페이즈 3의 마지막 작품이 될 것이라고 언급했다. 그런데 사실상 이 작품이 페이즈 3과 페이즈 4를 잇는 중간다리 역할을 하고 있어서 어떤 쪽으로 분류해도 이상할 것은 없다.</h4>
+        <h7>▶▶▶</h7>
+        <h4>피터 파커와 그의 친구들은 유럽으로 여름 여행을 떠난다.</h4>
+        <h4>하지만 친구들은 휴식을 취할 여유가 없어진다.</h4>
+        <h4>피터는 닉 퓨리의 제안을 받아들여 유럽 대륙에서 자연 재해와 파괴를 일으키는 크리처들의 비밀을 찾아내는 미션에 합류한다.</h4><h2>https://namu.wiki/w/%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8:%20%ED%8C%8C%20%ED%94%84%EB%A1%AC%20%ED%99%88</h2>
+    </section>
+    
+ <!--contaner-->
+</div>
+</body>
+<footer>
+       <div id="foo_div">
+           <span>동양미래대학교 컴퓨터소프트웨어공학과</span> <span>  |  </span>
+           <span>20202275 Choen Sujin</span> <span>   |  </span>
+           <span>[Final HW]</span>
+       </div>
+    </footer>
+</html>
